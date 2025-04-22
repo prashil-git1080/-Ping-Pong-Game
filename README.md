@@ -19,6 +19,57 @@ html code:
     <script src="script.js"></script>
 </body>
 </html>
+
+css code :
+body {
+
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background-color: #333;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+.paddle {
+    position: absolute;
+    width: 10px;
+    height: 80px;
+    background-color: #fff;
+}
+
+.left-paddle {
+    left: 10px;
+    top: 160px;
+}
+
+.right-paddle {
+    right: 10px;
+    top: 160px;
+}
+
+.ball {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 392.5px;
+    top: 192.5px;
+}
+ 
 js.code :
 const gameContainer = document.querySelector('.game-container');
 
